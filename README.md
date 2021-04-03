@@ -15,7 +15,7 @@ Basis: uitleg, spelen, afgaan en punten
 - [Cenk] achtergrond
 - [Rayan] characters uitwerken
 - [Cenk] punten kunnen scoren
-- [Rayan] uitlegscherm
+- [Rayan] uitlegscherm. 
 
 Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
 - [ ] *later uitwerken*
