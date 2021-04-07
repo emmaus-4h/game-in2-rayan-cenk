@@ -22,18 +22,21 @@ const SPELEN = 1;
 const GAMEOVER = 2;
 var spelStatus = SPELEN;
 
+
 var spelerX = 200; // x-positie van speler
-var spelerY = 100; // y-positie van speler
+var spelerY = 650; // y-positie van speler
 
 var kogelX = 0;    // x-positie van kogel
 var kogelY = 0;    // y-positie van kogel
 
-var vijandX = 0;   // x-positie van vijand
-var vijandY = 0;   // y-positie van vijand
+var vijandX = 250;   // x-positie van vijand
+var vijandY = 250;   // y-positie van vijand
 
 var score = 0; // aantal behaalde punten
 
 
+
+  
 
 
 
@@ -186,4 +189,15 @@ function draw() {
       }
       break;
   }
+   
+    { // draw the car body
+    fill(255, 0, 115);
+    rect(200, 200, 100, 20);
+    rect(200 + 15, 178, 70, 40);
+    
+    // draw the wheels
+    fill(77, 66, 66);
+    ellipse(200 + 25, 221, 24, 24);
+    ellipse(200 + 75, 221, 24, 24);}
+      
 }

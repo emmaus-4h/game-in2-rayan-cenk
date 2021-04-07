@@ -17,3 +17,12 @@ html, body {
    */ 
   margin: 0px;
 }
+ // draw the car body
+    fill(255, 0, 115);
+    rect(200, 200, 100, 20);
+    rect(200 + 15, 178, 70, 40);
+    
+    // draw the wheels
+    fill(77, 66, 66);
+    ellipse(200 + 25, 221, 24, 24);
+    ellipse(200 + 75, 221, 24, 24);
