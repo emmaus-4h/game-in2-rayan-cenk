@@ -43,11 +43,6 @@ var score = 0; // aantal behaalde punten
 /* ********************************************* */
 /*      functies die je gebruikt in je game      */
 /* ********************************************* */
-
-
-/**
- * Tekent het speelveld
- */
 var tekenVeld = function () {
   fill("black");
   rect(20, 20, width - 2 * 20, height - 2 * 20);
@@ -91,7 +86,9 @@ var tekenSpeler = function(x, y) {
  * Updatet globale variabelen met positie van vijand of tegenspeler
  */
 var beweegVijand = function() {
-    
+        if (keyIsDown(RIGHT_ARROW)) {
+    spelerX += 5;
+  }
 };
 
 
@@ -190,14 +187,5 @@ function draw() {
       break;
   }
    
-    { // draw the car body
-    fill(255, 0, 115);
-    rect(200, 200, 100, 20);
-    rect(200 + 15, 178, 70, 40);
-    
-    // draw the wheels
-    fill(77, 66, 66);
-    ellipse(200 + 25, 221, 24, 24);
-    ellipse(200 + 75, 221, 24, 24);}
-      
+
 }
