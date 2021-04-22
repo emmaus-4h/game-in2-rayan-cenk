@@ -105,6 +105,18 @@ var beweegKogel = function() {
  * Updatet globale variabele spelerX en spelerY
  */
 var beweegSpeler = function() {
+  if(keyIsDown(KEY_LEFT)) {
+    spelerX=spelerX-4;
+  }
+    if(keyIsDown(KEY_RIGHT)) {
+      spelerX=spelerX+4;
+    }
+      if(keyIsDown(KEY_UP)) {
+        spelerY=spelerY-4
+      }
+        if(keyIsDown(KEY_DOWN)) {
+          spelerY=spelerY+4;
+        }
 
 };
 
@@ -159,7 +171,7 @@ function setup() {
  * de code in deze functie wordt meerdere keren per seconde
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
-function draw() {
+ function draw() {
   switch (spelStatus) {
     case SPELEN:
       beweegVijand();
@@ -189,3 +201,4 @@ function draw() {
    
 
 }
+
